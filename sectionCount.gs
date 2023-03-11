@@ -23,7 +23,7 @@ function countPerSection() {
     // Using this regex instead of \W so that words aren't split on apostrophes
     // note that the Google Docs counter doesn't actually count em-dashes
     var wordArr = p.getText().split(/[\s+“”",.—!:\/]+/)
-    console.log(wordArr.filter(isNotEmpty));
+    // console.log(wordArr.filter(isNotEmpty));
     return wordArr.filter(isNotEmpty).length;
   });
 
