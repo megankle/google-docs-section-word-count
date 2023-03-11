@@ -1,1 +1,3 @@
-# google-docs-section-word-count
+This Google Docs script adds section counts after each heading so they will appear in the document outline. The word counts might not align exactly with the Google Docs count, since Google Docs treats words separated by an em-dash as a singular word (but if you want to change that, you can just remove the em-dash from the regex). Also, there is a caveat that the script will remove text where there are parentheses surrounding only numbers—this is a product of `removeCountPerSection()`, so that function can be edited if needed.
+
+The script can be added in Extensions > Apps Script. When running the code, select the `updatecounts()` function. You will need to re-run the script to refresh the word counts.
